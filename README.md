@@ -1,14 +1,17 @@
-# trade-store-app
 
 
 # Problem Statement
 
-# Consider a scenario where thousands of trades flows into one store. Assume any way of transmission of trades. We need to create a one trade store, which stores the trade in the following order
+ Consider a scenario where thousands of trades flows into one store. Assume any way of transmission of trades. We need to create a one trade store, which stores the trade in the following order
 
 Trade Id	Version	Counter-Party Id	Book-Id	Maturity Date	Created Date	Expired
+
 T1	1	CP-1	B1	20/05/2020	<today date>	N
+ 
 T2	2	CP-2	B1	20/05/2021	<today date>	N
+ 
 T2	1	CP-1	B1	20/05/2021	14/03/2015	N
+ 
 T3	3	CP-3	B2	20/05/2014	<today date>	Y
 
 
@@ -24,7 +27,7 @@ T3	3	CP-3	B2	20/05/2014	<today date>	Y
  "tradeId":"T1", 
  "version":1, 
  "counterParty":"counterParty1",
-"bookId": "bookId",
+  "bookId": "bookId",
  "maturityDate": "2020-05-20",
-  "expiredFlag":"Y"
+ "expiredFlag":"Y"
  }
